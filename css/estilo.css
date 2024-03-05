@@ -46,7 +46,7 @@ p{text-align: center;
 }
 
 .destinos p{
-    font-size: 4rem;
+    font-size: 2rem;
     color: #212121;
     padding: 10px;
 }
@@ -100,7 +100,9 @@ p{text-align: center;
     font-size: 20px;
     text-align: center 
 }
-
+footer .redes{
+    text-align: center;
+}
 footer .redes i{
     color:rgb(179,133,220);
     font-size: 50px;
@@ -142,11 +144,12 @@ h2{
  
 form{
     display: inline-block;
-    margin-top: 0em;
+    margin-top: 0cm;
     margin-left: auto;
     padding:0cm;
     float: none;
-   
+    justify-content: center;
+    align-items: center;
 }
 
  .btn{
@@ -158,3 +161,23 @@ form{
     font-size: 18px;
     margin-top: 10px;
 }
+
+/* PRODUCTOS */
+
+.contenedorProductos p{
+    font-size: 2rem;
+    color: #212121;
+    padding: 10px;
+}
+.contenedorProductos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.productos{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
