@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@mixin anclas{
+    color: #fff;
+    text-align: center;
+}
+
+// variables
+$color1:rgb(179,133,220);
+$color2:rgb(229,196,223);
+$color3:rgb(182,127,208);
+$color4:rgb(169, 77,192);
+
+// body
+body{
+    background-color: #D9AFD9;
+background-image: linear-gradient(358deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.navbar {
+background-color: $color1;
+}
+
+.navbar-brand {
+    color: $color2 !important;
+    font-size:large;
+    font-weight: bold;
+    img {
+        height: 80px;
+    }
+}
+
+.nav-link {
+    color: #fff !important;
+    text-shadow: 0, 0, 5px #000;
+    font-size: x-large;
+
+    &:hover {
+        color: $color2 !important;
+    }
+}
+
+/*main*/
+
+main{
+    margin: 20px;
+    padding: 20px;
+}
+
+h2, h3{
+    text-align: center;
+    text-decoration: solid;
+    margin: 10px  0px ;
+}
+
+p{text-align: center;
+}
+
+.destinos p{
+    font-size: 25px;
+    color: #212121;
+    padding: 10px;
+}
+.contenedorDestinos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.destinos{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjeta {
+    img {
+    max-width: 50%;
+    align-items: center;
+    margin: 15px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border: radius 10%;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    max-width: 80%;
+
+    button {
+        background-color: $color3;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1 rem;
+        cursor: pointer;
+        margin: 10px;
+
+        &:hover {
+        background-color:$color4;
+        }
+    }
+}
+
+/* footer */
+
+.footer{
+    padding: 30px 0;
+    font-size: 20px;
+    @include anclas
+}
+footer {
+    .redes {
+        text-align: center;
+        background-color: $color1;
+        padding: 30px;
+
+            i {
+                font-size: 50px;
+                letter-spacing: 30px;
+                @include anclas
+            }
+            a {
+                text-decoration: none;
+                text-align: center;
+            }
+    }
+
+        p {
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: larger;
+    }
+}
+
+/* index */
+
+.jumbotron{
+    height: 200px;
+    background-image: url(../img/5.png);
+    text-align: center;
+    font-weight: bold;
+    font-size:medium;
+    text-shadow: 0, 0, 5px #000;
+    color: hsl(229,196,223)!important
+}
+
+h2{
+    background-color: $color1;
+    padding:30px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000f;
+    @include anclas
+}
+
+/* contacto */
+
+form{
+    display: inline-block;
+    margin-top: 0cm;
+    margin-left: auto;
+    padding:0cm;
+    float: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: $color3!important;
+    border: none;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* productos */
+
+.contenedorProductos {
+    p {
+        font-size: 2rem;
+        color: #212121;
+        padding: 10px;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.productos{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}

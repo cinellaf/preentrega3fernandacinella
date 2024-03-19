@@ -1,183 +1,190 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    font-family: "Noto Sans", sans-serif;
-      }
-
-.navbar{
-    background-color: rgb(179,133,220);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
 }
 
-.navbar-brand{
-    color: rgb(229,196,223)!important
+body {
+  background-color: #D9AFD9;
+  background-image: linear-gradient(358deg, #D9AFD9 0%, #97D9E1 100%);
 }
 
-.navbar-brand img{
-    height: 80px;
+.navbar {
+  background-color: rgb(179, 133, 220);
 }
 
-.nav-link{
-    color: #fff!important;
-    text-shadow: 0, 0, 5px #000;
-
+.navbar-brand {
+  color: rgb(229, 196, 223) !important;
+  font-size: large;
+  font-weight: bold;
 }
-.nav-link:hover{
-    color: rgb(81,213,215) !important;
+.navbar-brand img {
+  height: 80px;
+}
+
+.nav-link {
+  color: #fff !important;
+  text-shadow: 0, 0, 5px #000;
+  font-size: x-large;
+}
+.nav-link:hover {
+  color: rgb(229, 196, 223) !important;
 }
 
 /*main*/
-
-main{
-    margin: 20px;
-    padding: 20px;
+main {
+  margin: 20px;
+  padding: 20px;
 }
 
-h2, h3{
-    text-align: center;
-    text-decoration: solid;
-    margin: 10px  0px ;
+h2, h3 {
+  text-align: center;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  margin: 10px 0px;
 }
 
-p{text-align: center;
+p {
+  text-align: center;
 }
 
-.destinos p{
-    font-size: 2rem;
-    color: #212121;
-    padding: 10px;
-}
-.contenedorDestinos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-.destinos{
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
+.destinos p {
+  font-size: 25px;
+  color: #212121;
+  padding: 10px;
 }
 
-.tarjeta img{
-    max-width: 50%;
-    align-items: center;
+.contenedorDestinos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.tarjeta{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    max-width: 80%;
+
+.destinos {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
 }
-.tarjeta button{
-    background-color: #53a840;
-    color: rgb(17, 101, 174);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1 rem;
-    cursor: pointer;
-    margin: 10px;
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border: radius 10%;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  max-width: 80%;
 }
-.tarjeta button:hover{
-    background-color: rgb(169, 77, 192);
+.tarjeta img {
+  max-width: 50%;
+  align-items: center;
+  margin: 15px;
+}
+.tarjeta button {
+  background-color: rgb(182, 127, 208);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1 rem;
+  cursor: pointer;
+  margin: 10px;
+}
+.tarjeta button:hover {
+  background-color: rgb(169, 77, 192);
 }
 
 /* footer */
-
-.footer{
-    background-color:rgb(220, 161, 133);
-    padding: 30px 0;
-    color:#fff;
-    font-size: 20px;
-    text-align: center 
-}
-footer .redes{
-    text-align: center;
-}
-footer .redes i{
-    color:rgb(179,133,220);
-    font-size: 50px;
-    letter-spacing: 30px;
-    text-align: center 
+.footer {
+  padding: 30px 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
 }
 
-footer .redes a{
-    text-decoration: none;
-    text-align: center;
+footer .redes {
+  text-align: center;
+  background-color: rgb(179, 133, 220);
+  padding: 30px;
 }
-
-footer p{
-    margin-bottom: 30px;
+footer .redes i {
+  font-size: 50px;
+  letter-spacing: 30px;
+  color: #fff;
+  text-align: center;
+}
+footer .redes a {
+  text-decoration: none;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: larger;
 }
 
 /* index */
-
-.jumbotron{
-    height: 200px;
-    background-image: url(../img/5.png);
-    text-align: center;
-    font-weight: bold;
-    font-size:large;
-    text-shadow: 0, 0, 5px #000;
-    color: hsl(229,196,223)!important   
+.jumbotron {
+  height: 200px;
+  background-image: url(../img/5.png);
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  text-shadow: 0, 0, 5px #000;
+  color: hsl(229, 100%, 100%) !important;
 }
 
-h2{
-    text-align: center;
-    background-color: rgb(179,133,220);
-    padding:30px;
-    font-weight: bold;
-    color:#fff;
-    text-shadow: 0 0 5px #000f;
+h2 {
+  background-color: rgb(179, 133, 220);
+  padding: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+  color: #fff;
+  text-align: center;
 }
 
 /* contacto */
- 
-form{
-    display: inline-block;
-    margin-top: 0cm;
-    margin-left: auto;
-    padding:0cm;
-    float: none;
-    justify-content: center;
-    align-items: center;
+form {
+  display: inline-block;
+  margin-top: 0cm;
+  margin-left: auto;
+  padding: 0cm;
+  float: none;
+  justify-content: center;
+  align-items: center;
 }
 
- .btn{
-    background-color: rgb(208,182,235)!important;
-    border: none;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 10px;
+.btn {
+  background-color: rgb(182, 127, 208) !important;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-/* PRODUCTOS */
-
-.contenedorProductos p{
-    font-size: 2rem;
-    color: #212121;
-    padding: 10px;
+/* productos */
+.contenedorProductos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.contenedorProductos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-.productos{
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
+.contenedorProductos p {
+  font-size: 2rem;
+  color: #212121;
+  padding: 10px;
 }
 
+.productos {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}/*# sourceMappingURL=estilo.css.map */
